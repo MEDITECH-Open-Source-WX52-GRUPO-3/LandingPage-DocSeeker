@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+/* Navbar styles */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    width: 100%;
+    z-index: 100;
+}
+.navbarLogo{
+    width: 200px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: white;
+}
+.navbarLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+.navbarElementItem{
+    text-align: center;
+    padding: 3rem 0;
+}
+.navbarElementItem a {
+    padding: 3rem 2rem;
+    text-decoration: none;
+    color: white;
+
+}
+.navbarBtn img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.navbarElementItem a {
+    padding: 3rem 5rem;
+}
+
+
+.hamburgerActive{
+    transform: translateX(0%);
+}
+.navbarElementItem:hover {
+    background-color: var(--secundary-color);
+}
+li{
+    list-style-type: none;
+}
+
+/*Navbar styles responsive*/
+.menu{
+    display: none;
+    width: 50px;
+    cursor: pointer;
+}
+.menuLinks{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1170px) {
+    .navbar {
+        left: unset;
+    }
+
+    .navbarBtn {
+        position: fixed;
+        background-color: var(--primary-color);
+        top: 0;
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        width: 50px;
+        top: 20px;
+        right: 70px;
+        z-index: 10;
+    }
+
+    .navbarLinks {
+        display: none;
+    }
+
+    .menuLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--secundary-color);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        border-radius: 10px;
+        transform: translateX(200%);
+        transition: transform 0.5s ease-in;
+    }
+
+
+}
