@@ -26,7 +26,6 @@ body{
     object-fit: cover;
     border-radius: 10px;
 }
-/* Rafael */
 
 section.hero{
     /*border: 1px solid red;*/
@@ -238,12 +237,6 @@ li{
 
 
 
-    /* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: poppins;
-        }*/
 }
 
 #services {
@@ -277,9 +270,7 @@ li{
     margin:2vm;
     margin-bottom: 30px;
     margin-top: 2vw;
-    /*margin-left: 225px;
-    margin-right: 150px;
-    margin-bottom: 50px;*/
+ 
 
 }
 
