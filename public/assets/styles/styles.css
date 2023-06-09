@@ -26,14 +26,20 @@ body{
     object-fit: cover;
     border-radius: 10px;
 }
-
+.btn:hover{
+    cursor: pointer;
+}
 section.hero{
     /*border: 1px solid red;*/
     background-color: #9BBFD7;
     padding: 20px;
     margin-top: 7rem;
 }
-
+.textBackground{
+    background-color: rgba(0, 0, 28, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+}
 h1{
     color: #092C4C;
     margin-left: 40px;
@@ -47,6 +53,7 @@ h1{
 
     background-color: #0093AB;
 
+    padding: 2rem 0;
 
     display: flex;
     justify-content: space-around;
@@ -372,7 +379,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     transition: all .25s ease;
     backface-visibility: hidden;
 }
@@ -458,10 +464,11 @@ body {
     justify-content: space-evenly;
 }
 
-.btnContainer {
-    display: flex;
-    justify-content: center;
-    padding: 0 0 2% 0;
+.sectionTitle {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 1rem 0;
 }
 
 #connectBtn {
